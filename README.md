@@ -1,65 +1,75 @@
-# Phase 1 Project
+## Final Project Submission
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+Please fill out: 
+* Student name:Justin Maffucci
+* Student pace: full time
+* Scheduled project review date/time: Thursday, March 25, 11:30am
+* Instructor name: James Irving
+* Blog post URL: TBD
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
+# Microsoft Studios
 
-## Project Overview
+**By:** Justin Maffucci
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+## Overview
 
-### Business Problem
+Microsoft had decided to enter the original content video production business. In order to do so effectively, it's necessary to examine the current data and trends in the industry. Valuable insights can be gained by analyzing data from IMDB, Box Office Mojo, and The Numbers. Data from each of these sources must be cleaned, organized, and occasionally excluded for proper analysis.
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+## Business Problem
 
-### The Data
+There are three main questions we are aiming to solve. Two of the three questions pertain to financial success metrics. The third question will help to answer what factors contribute to high vs. low movie rating reviews.
 
-In the folder `zippedData` are movie datasets from:
+1. Which movie genre is most profitable in terms of return on initial investment?
+2. Which directors' movies have been the most successful financially?
+3. How does the length of the movie affect ratings?
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+## Data Understanding
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+- **Data Sources:** IMDB, Box Office Mojo, The Numbers
+- **Variables Included:** Movie titles, cast & crew, release date, financial metrics, ratings, genres, and runtime.
+- **Time Frame:** In order to esnure our conclusion will be based on the current state of the movie industry, we only analyze data from 2010-2019. We chose to exlude 2020 to ensure that the effects of the pandemic are removed from our analysis. 
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
+## Data Analysis
 
-## Deliverables
+    
+![png](output_53_0.png)
+    
 
-There are three deliverables for this project:
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+    
+![png](output_56_0.png)
+    
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+    
+![png](output_58_0.png)
+    
 
-### Key Points
+## Evaluation
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+### ROI by Genre
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+The genres with the highest median return on investment are:
+1. Mystery (2.77x)
+2. Sci-Fi (2.18)
+3. Horror (2.70)
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+The genres with the lowest median return on investment are:
+1. Western (-0.49x)
+2. War (-0.11x)
+3. Music (0.75x)
 
-## Getting Started
+### ROI by Director
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+The directors who have performed the best in terms of ROI  are:
+1. William Brent Bell
+2. Levan Gabriadze
+3. Tod Williams
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+### Correlation between Runtime and Average Rating
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+There seems to be a general positive correlation between runtime and rating.
 
-## Project Submission and Review
+## Conclusions
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+Based on the data, it would make the most sense to start production with mystery, Sci-Fi, and horror movies. Movies in these genres have performed the best over the past ten years. Choosing any of the directors shown in the "Most Profitable Directors" graph would increase the chances of the studio being successful. Each of these directors has returned 20x the initial investment. Finally, there seems to be a somewhat loose correlation between the length of the movie and the ratings it receives. Of course, correlation does not prove causation, so we should proceed with caution and additional analysis. 
