@@ -1,12 +1,12 @@
 ## Final Project Submission
 
-Please fill out: 
-* Student name:Justin Maffucci
-* Student pace: full time
-* Scheduled project review date/time: Thursday, March 25, 11:30am
-* Instructor name: James Irving
-* Blog post URL: TBD
+Please fill out:
 
+- Student name:Justin Maffucci
+- Student pace: full time
+- Scheduled project review date/time: Thursday, March 25, 11:30am
+- Instructor name: James Irving
+- Blog post URL: TBD
 
 # Microsoft Studios
 
@@ -28,40 +28,36 @@ There are three main questions we are aiming to solve. Two of the three question
 
 - **Data Sources:** IMDB, Box Office Mojo, The Numbers
 - **Variables Included:** Movie titles, cast & crew, release date, financial metrics, ratings, genres, and runtime.
-- **Time Frame:** In order to esnure our conclusion will be based on the current state of the movie industry, we only analyze data from 2010-2019. We chose to exlude 2020 to ensure that the effects of the pandemic are removed from our analysis. 
+- **Time Frame:** In order to esnure our conclusion will be based on the current state of the movie industry, we only analyze data from 2010-2019. We chose to exlude 2020 to ensure that the effects of the pandemic are removed from our analysis.
 
 ## Data Analysis
 
-    
-![png](output_53_0.png)
-    
+![png](Unknown-2.png)
 
+![png](Unknown1.png)
 
-    
-![png](output_56_0.png)
-    
-
-    
-![png](output_58_0.png)
-    
+![png](Unknown.png)
 
 ## Evaluation
 
 ### ROI by Genre
 
 The genres with the highest median return on investment are:
+
 1. Mystery (2.77x)
 2. Sci-Fi (2.18)
 3. Horror (2.70)
 
 The genres with the lowest median return on investment are:
+
 1. Western (-0.49x)
 2. War (-0.11x)
 3. Music (0.75x)
 
 ### ROI by Director
 
-The directors who have performed the best in terms of ROI  are:
+The directors who have performed the best in terms of ROI are:
+
 1. William Brent Bell
 2. Levan Gabriadze
 3. Tod Williams
@@ -72,4 +68,4 @@ There seems to be a general positive correlation between runtime and rating.
 
 ## Conclusions
 
-Based on the data, it would make the most sense to start production with mystery, Sci-Fi, and horror movies. Movies in these genres have performed the best over the past ten years. Choosing any of the directors shown in the "Most Profitable Directors" graph would increase the chances of the studio being successful. Each of these directors has returned 20x the initial investment. Finally, there seems to be a somewhat loose correlation between the length of the movie and the ratings it receives. Of course, correlation does not prove causation, so we should proceed with caution and additional analysis. 
+Based on the data, it would make the most sense to start production with mystery, Sci-Fi, and horror movies. Movies in these genres have performed the best over the past ten years. Choosing any of the directors shown in the "Most Profitable Directors" graph would increase the chances of the studio being successful. Each of these directors has returned 20x the initial investment. Finally, there seems to be a somewhat loose correlation between the length of the movie and the ratings it receives. Of course, correlation does not prove causation, so we should proceed with caution and additional analysis.
